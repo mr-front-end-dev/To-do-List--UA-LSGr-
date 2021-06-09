@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список дел до виконання</title>
+  <link rel="icon" href="icon/To-do-List.svg">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/container.css">
+  <link rel="stylesheet" href="css/section.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/tasks.css">
+  <link rel="stylesheet" href="css/buttons.css">
+</head>
+<body class="body">
+  <main class="container">
+    <section class="section__links">
+      <a class="section__button--link" href="https://mr-front-end-dev.github.io/To-do-List--EN-LSGr-/"><button class="section__button">EN</button></a>
+      <a class="section__button--link" href="https://mr-front-end-dev.github.io/To-do-List--RU-LSGr-/"><button class="section__button">RU</button></a>
+      <a class="section__button--link" href="https://mr-front-end-dev.github.io/To-do-List--DE-LSGr-/"><button class="section__button">DE</button></a>
+      <a class="section__button--link" href="https://mr-front-end-dev.github.io/To-do-List--ES-LSGr-/"><button class="section__button">ES</button></a>
+      <a class="section__button--link" href="https://mr-front-end-dev.github.io/To-do-List--PL-LSGr-/"><button class="section__button">PL</button></a>
+      <a class="section__button--link" href="https://mr-front-end-dev.github.io/To-do-List--UA-LSG-/"><button class="section__button section__button--lightslategrey">🌗</button></a>
+    </section>
+    <header>
+      <h2 class="section__title">Список дел до виконання</h2>
+    </header>
+    <section class="section">
+      <h2 class="section__header">Додайте нове завдання</h2>
+      <div class="section__body">
+        <form class="form js-form">
+          <input class="form__input js-newTask" type="text" placeholder="Що треба зробити?" required>
+          <button class="form__button">Додайте нове завдання</button>
+        </form>
+      </div>
+    </section>
+    <section class="section">
+      <header class="section__header">
+        <h2>Список дел до виконання</h2>
+        <div class="buttons js-buttons">
+          <button class="buttons__button js-toggleHideDoneTasks">Сховати виконані завдання</button>
+          <button class="buttons__button js-markAllDone">Виконати всі завдання</button>
+        </div>
+      </header>
+      <div class="section__body">
+        <ul class="tasks js-tasks">
+          <li class="tasks__item js-tasks">
+            <button class="tasks__button tasks__button--done js-toggleDone"></button>
+            <span class="tasks__content tasks__content--done"></span>
+          </li>
+        </ul>
+      </div>
+    </section> 
+
+    <script defer src="js/script.js"></script>
+  </main>
+</body>
+</html>
